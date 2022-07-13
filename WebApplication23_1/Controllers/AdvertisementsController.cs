@@ -44,8 +44,6 @@ namespace WebApplication23_1.Controllers
             return View(advertisement);
         }
 
-       
-
         // GET: Advertisements/Create
         public IActionResult Create()
         {
@@ -57,7 +55,7 @@ namespace WebApplication23_1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Login,Password,Floor,About")] Advertisement advertisement)
+        public async Task<IActionResult> Create([Bind("Id,Login,Password,Floor,howFindOut,About")] Advertisement advertisement)
         {
             if (ModelState.IsValid)
             {
@@ -89,7 +87,7 @@ namespace WebApplication23_1.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Login,Password,Floor,About")] Advertisement advertisement)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Login,Password,Floor,howFindOut,About")] Advertisement advertisement)
         {
             if (id != advertisement.Id)
             {

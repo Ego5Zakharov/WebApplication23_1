@@ -35,19 +35,21 @@
             </select>
             </div>
 
+            <div>
+            <label asp-for="howFindOut"></label>
+
+           <select asp-for="howFindOut"><option value=""></option>
+            <option>Реклама в интернете</option>
+            <option>Реклама в транспортном средстве</option>
+            <option>Случайно</option>
+            </select>
+            </div>
+
             <div class="form-group">
-               
                 <label asp-for="About" class="control-label">
                      <textarea asp-for="About"></textarea>
 
                 </label>
-                @* <textarea asp-for = "About" cols="50" id="text" name="text" rows="5"> <br /> 
-                 
-                 </textarea>**@
-
-
-                @*<input asp-for="About" class="form-control" />*@
-                @*<span asp-validation-for="About" class="text-danger"></span>*@
             </div>
 
            

@@ -6,8 +6,7 @@
         public string Login { get; set; }
         public string Password { get; set; }
         public string Floor { get; set; }
+        public string howFindOut { get; set; }
         public string About { get; set; }
-    
-        
     }
 }
